@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search Engine Design Clone</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            height: 80vh;
+        }
+
+        input {
+            width: 60%;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid lightgray;
+            outline: none;
+        }
+
+        input:focus {
+            border: 1px solid skyblue;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+            border: 1px solid rgba(211, 211, 211, 0.3);
+            background-color: rgba(224, 224, 224, 0.267);
+            border-radius: 5px;
+            margin: 0 4px;
+        }
+
+        button:hover {
+            border-color: lightgray;
+            box-shadow: 1px 1px 2px 2px rgba(211, 211, 211, 0.37);
+        }
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+<form action="https://www.google.com/search">
+    <input type="text" name="q" placeholder="Search">
+    <div>
+        <button type="submit" >Google Search</button>
+        <button type="button">I'm Feeling Lucky</button>
+    </div>
+</form>
+</body>
+</html>
